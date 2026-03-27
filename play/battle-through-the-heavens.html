@@ -1,190 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Battle Through the Heavens - dagoatgames67.github.io</title>
-    <meta name="description" content="Play Battle Through the Heavens online for free on dagoatgames67.github.io. No downloads required - instant cloud gaming powered by now.gg!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Play Battle Through the Heavens Online for Free - DaGoatGames</title>
+    <meta name="description" content="An action RPG based on the popular anime series Battle Through the Heavens.">
     <link rel="icon" href="../images/favicon.png" sizes="32x32">
-    <meta property="og:url" content="https://dagoatgames67.github.io" />
-    <meta property="og:title" content="Battle Through the Heavens" />
-    <meta property="og:site_name" content="DaGoatGames" />
-    <meta property="og:description" content="Play Battle Through the Heavens online for free on dagoatgames67.github.io. No downloads required - instant cloud gaming powered by now.gg!" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://cdn.now.gg/apps-content/9089/icon/battle-through-the-heavens.png">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body id="page-top" style="background: url('../images/background1.png'); background-size: cover;">
-    <nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav">
+<body>
+    <nav class="navbar">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand js-scroll-trigger" href="/">
-                <strong>DaGoatGames</strong>
-            </a>
-            <div class="navbar-collapse collapse" id="nav-menu">
+            <a href="../" class="logo"><span>DaGoatGames</span></a>
+            <div class="search-bar">
+                <span class="search-icon">&#128269;</span>
+                <input type="text" placeholder="Search" id="search-input" onkeyup="filterGames()">
             </div>
-            <div class="d-none d-lg-block">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="../category/action.html">Action</a></li>
-            <li class="nav-item"><a class="nav-link" href="../category/adventure.html">Adventure</a></li>
-            <li class="nav-item"><a class="nav-link" href="../category/arcade.html">Arcade</a></li>
-            <li class="nav-item"><a class="nav-link" href="../category/casual.html">Casual</a></li>
-            <li class="nav-item"><a class="nav-link" href="../category/multiplayer.html">Multiplayer</a></li>
-            <li class="nav-item"><a class="nav-link" href="../category/puzzle.html">Puzzle</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
-              <ul role="menu" class="dropdown-menu">
-                <li><a class="dropdown-item" href="../category/rpg.html">RPG</a></li>
-                <li><a class="dropdown-item" href="../category/racing.html">Racing</a></li>
-                <li><a class="dropdown-item" href="../category/simulation.html">Simulation</a></li>
-                <li><a class="dropdown-item" href="../category/sports.html">Sports</a></li>
-                <li><a class="dropdown-item" href="../category/strategy.html">Strategy</a></li>
-              </ul>
-            </li>
+            <ul class="nav-links">
+        <li><a href="../category/action.html">Action</a></li>
+        <li><a href="../category/adventure.html">Adventure</a></li>
+        <li><a href="../category/arcade.html">Arcade</a></li>
+        <li><a href="../category/casual.html">Casual</a></li>
+        <li><a href="../category/multiplayer.html">Multiplayer</a></li>
+        <li><a href="../category/puzzle.html">Puzzle</a></li>
+        <li><a href="../category/rpg.html">RPG</a></li>
+        <li><a href="../category/racing.html">Racing</a></li>
+        <li><a href="../category/simulation.html">Simulation</a></li>
+        <li><a href="../category/sports.html">Sports</a></li>
+        <li><a href="../category/strategy.html">Strategy</a></li>
 
-          </ul>
-            </div>
+            </ul>
         </div>
     </nav>
+    <div class="main-container">
 
-<div class="container game-wrapper">
-  <div class="row">
-      <div class="col-md-9">
-            <div class="game-container">
-                <div class="game-content">
-                    <div class="game-iframe-container" id="game-player">
-                        <div id="mobile-back-button" draggable="true">
-                            <i class="bi bi-x-circle-fill"></i>
-                        </div>
-                        <iframe class="game-iframe" id="game-area" src="https://now.gg/apps/juefeng-games/9089/battle-through-the-heavens.html" width="480" height="800" scrolling="none" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="game-info">
-                    <div class="header-left">
-                        <h1 class="single-title">Battle Through the Heavens</h1>
-                        <span class="tag-item">Action</span>
-                        <span class="tag-item">Rating: 4.4/5</span>
-                    </div>
-                    <div class="header-right">
-                        <div class="b-action2">
-                            <a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Fullscreen</a>
-                            <a href="https://now.gg/apps/juefeng-games/9089/battle-through-the-heavens.html" target="_blank" class="btn btn-capsule"><i class="bi bi-box-arrow-up-right b-icon"></i>Play on now.gg</a>
-                        </div>
-                    </div>
+<div class="game-page-header">
+    <img src="https://cdn.now.gg/apps-content/9089/banner/desktop/battle-through-the-heavens.jpg" alt="Battle Through the Heavens" class="game-banner" onerror="this.style.background='linear-gradient(135deg,#2d1b4e,#1a0a2e)';this.style.height='200px'">
+</div>
+
+<div class="game-page-content">
+    <div class="game-page-main">
+        <div class="game-page-info">
+            <img src="https://cdn.now.gg/apps-content/9089/icon/battle-through-the-heavens.png" alt="Battle Through the Heavens" class="game-page-icon">
+            <div class="game-page-details">
+                <h1>Battle Through the Heavens</h1>
+                <div class="game-page-meta">
+                    <span class="rating">&#11088; 4.4</span>
+                    <span>|</span>
+                    <a href="/category/action.html">Action Games</a>
                 </div>
             </div>
-      </div>
-      <div class="col-md-3">
-        <div class="widget">
-            <h4 class="widget-title">Game Info</h4>
-            <p><strong>Category:</strong> <a href="/category/action.html">Action</a></p>
-            <p><strong>Rating:</strong> 4.4/5</p>
-            <p><strong>Platform:</strong> Cloud Gaming</p>
-            <p>Play Battle Through the Heavens online instantly in your browser. No downloads needed!</p>
         </div>
-      </div>
-  </div>
-</div>
-<div class="container">
-    <h2 class="item-title">You might also like</h2>
-    <div class="row">
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="../play/ace-defender.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://cdn.now.gg/apps-content/9152/icon/ace-defender.png" class="small-thumb img-rounded lazyload" alt="Ace Defender"></div>
-      <div class="list-info">
-        <div class="list-title">Ace Defender</div>
-      </div>
+
+        <div class="game-tags">
+            <span class="game-tag">Action</span>
+            <span class="game-tag">Free</span>
+            <span class="game-tag">Online</span>
+            <span class="game-tag">Multiplayer</span>
+        </div>
+
+        <a href="https://now.gg/apps/juefeng-games/9089/battle-through-the-heavens.html" target="_blank" class="btn-play">Play in browser</a>
+
+        <div class="game-description">
+            <p>An action RPG based on the popular anime series Battle Through the Heavens.</p>
+            <p style="margin-top:12px">Play Battle Through the Heavens instantly in your browser without downloading. Enjoy lag-free, high-quality gaming with DaGoatGames.</p>
+        </div>
     </div>
-  </div>
-  </a>
 </div>
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="../play/counter-attack.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://cdn.now.gg/apps-content/8258/icon/counter-attack.png" class="small-thumb img-rounded lazyload" alt="Counter Attack"></div>
-      <div class="list-info">
-        <div class="list-title">Counter Attack</div>
-      </div>
-    </div>
-  </div>
-  </a>
-</div>
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="../play/gangs-wars-pixel-shooter-rp.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://cdn.now.gg/apps-content/8827/icon/gangs-wars-pixel-shooter-rp.png" class="small-thumb img-rounded lazyload" alt="Gangs Wars: Pixel Shooter RP"></div>
-      <div class="list-info">
-        <div class="list-title">Gangs Wars: Pixel Shooter RP</div>
-      </div>
-    </div>
-  </div>
-  </a>
-</div>
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="../play/rumble-club.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://cdn.now.gg/apps-content/8697/icon/rumble-club.png" class="small-thumb img-rounded lazyload" alt="Rumble Club"></div>
-      <div class="list-info">
-        <div class="list-title">Rumble Club</div>
-      </div>
-    </div>
-  </div>
-  </a>
-</div>
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="../play/blox-fruit.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://cdn.now.gg/apps-content/19901/icon/b.png" class="small-thumb img-rounded lazyload" alt="Blox Fruit"></div>
-      <div class="list-info">
-        <div class="list-title">Blox Fruit</div>
-      </div>
-    </div>
-  </div>
-  </a>
-</div>
-<div class="col-lg-2 col-md-4 col-6 grid-3">
-  <a href="../play/80-anime-vanguards.html">
-  <div class="game-item">
-    <div class="list-game">
-      <div class="list-thumbnail"><img src="https://cdn.now.gg/apps-content/19908/icon/80-anime-vanguards.png" class="small-thumb img-rounded lazyload" alt="80 Anime Vanguards"></div>
-      <div class="list-info">
-        <div class="list-title">80 Anime Vanguards</div>
-      </div>
-    </div>
-  </div>
-  </a>
-</div>
-    </div>
+<div class="section-header"><h2 class="section-title">You might also like</h2></div>
+<div class="game-grid">
+<a href="../play/ace-defender.html" class="game-card" data-title="ace defender">
+    <img src="https://cdn.now.gg/apps-content/9152/icon/ace-defender.png" alt="Ace Defender" class="game-card-img" loading="lazy">
+    <div class="game-card-title">Ace Defender</div>
+</a>
+<a href="../play/counter-attack.html" class="game-card" data-title="counter attack">
+    <img src="https://cdn.now.gg/apps-content/8258/icon/counter-attack.png" alt="Counter Attack" class="game-card-img" loading="lazy">
+    <div class="game-card-title">Counter Attack</div>
+</a>
+<a href="../play/gangs-wars-pixel-shooter-rp.html" class="game-card" data-title="gangs wars: pixel shooter rp">
+    <img src="https://cdn.now.gg/apps-content/8827/icon/gangs-wars-pixel-shooter-rp.png" alt="Gangs Wars: Pixel Shooter RP" class="game-card-img" loading="lazy">
+    <div class="game-card-title">Gangs Wars: Pixel Shooter RP</div>
+</a>
+<a href="../play/rumble-club.html" class="game-card" data-title="rumble club">
+    <img src="https://cdn.now.gg/apps-content/8697/icon/rumble-club.png" alt="Rumble Club" class="game-card-img" loading="lazy">
+    <div class="game-card-title">Rumble Club</div>
+</a>
+<a href="../play/blox-fruit.html" class="game-card" data-title="blox fruit">
+    <img src="https://cdn.now.gg/apps-content/19901/icon/b.png" alt="Blox Fruit" class="game-card-img" loading="lazy">
+    <div class="game-card-title">Blox Fruit</div>
+</a>
+<a href="../play/80-anime-vanguards.html" class="game-card" data-title="80 anime vanguards">
+    <img src="https://cdn.now.gg/apps-content/19908/icon/80-anime-vanguards.png" alt="80 Anime Vanguards" class="game-card-img" loading="lazy">
+    <div class="game-card-title">80 Anime Vanguards</div>
+</a>
 </div>
 
-    <footer class="footer border-line">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2024 DaGoatGames. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <a href="../policy.html" class="text-white me-3">Privacy Policy</a>
-                    <a href="../term.html" class="text-white me-3">Terms</a>
-                    <a href="../dmca.html" class="text-white">DMCA</a>
-                </div>
-            </div>
+    </div>
+    <footer class="footer">
+        <div>DaGoatGames &copy; 2024</div>
+        <div style="margin-top:8px">
+            <a href="../policy.html">Privacy</a>
+            <a href="../term.html">Terms</a>
+            <a href="../dmca.html">DMCA</a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
