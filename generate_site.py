@@ -5,7 +5,7 @@ import json
 
 BASE = "/Users/noahgardner/Documents/GitHub/Ngardner29"
 SITE_NAME = "DaGoatGames"
-SITE_DOMAIN = "dagoatgames.com"
+SITE_DOMAIN = "ngardner29.github.io/dagoatgames67"
 
 # Games database: (slug, title, nowgg_path, category, icon_id, icon_slug, rating)
 # icon URL pattern: https://cdn.now.gg/apps-content/{icon_id}/icon/{icon_slug}.png
