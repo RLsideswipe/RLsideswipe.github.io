@@ -4,7 +4,7 @@ import os
 
 BASE = "/Users/noahgardner/Documents/GitHub/Ngardner29"
 SITE_NAME = "DaGoatGames"
-SITE_DOMAIN = "dagoatgames67.github.io"
+SITE_DOMAIN = "rlsideswipe.github.io"
 
 # Rocket League Sideswipe - verified CDN URLs
 GAME = {
